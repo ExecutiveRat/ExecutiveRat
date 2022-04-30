@@ -1,6 +1,6 @@
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "LOADING";
-	Text = "VERSION : RATv69";
+	Text = "VERSION : RATv69.696969";
 	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
 Duration = 5;
 
