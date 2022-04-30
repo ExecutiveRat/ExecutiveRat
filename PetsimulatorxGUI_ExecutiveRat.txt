@@ -63,8 +63,14 @@ MasterySection:NewToggle("Open All Eggs", "Open all eggs", function(state)
         loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Auto%20Hatch%20Disable'))()
 end
 end)
-MasterySection:NewButton("Auto Convert", "Convert", function()
-   loadstring(game:HttpGet(''))()
+MasterySection:NewToggle("Auto Collect LootBags", "LootBag", function(state)
+   if state then
+        _G.Toggle = true -- 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/PetSimX/main/AutoCollectLootBags.lua"))()
+   else
+        _G.Toggle = false -- 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/PetSimX/main/AutoCollectLootBags.lua"))()
+end
 end)
 MasterySection:NewButton("Auto Farm all types", "Farm", function()
    loadstring(game:HttpGet(''))()
