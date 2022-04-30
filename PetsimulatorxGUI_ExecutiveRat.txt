@@ -18,7 +18,7 @@ CreditsSection:NewButton("Mouse", "Mouse", function()
    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/MOSUE-TEST/main/Protected%20(13).lua'),true))()
 end)
 CreditsSection:NewButton("Anti Ban", "Ban", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Anti%20bab))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Anti%20bab'))()
 end)
 
 local Main = Window:NewTab("Troll")
