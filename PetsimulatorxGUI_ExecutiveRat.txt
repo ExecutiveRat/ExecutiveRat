@@ -4,7 +4,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
 Duration = 5;
 
-wait (10)
+wait (3)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Kavo.txt"))()
 local Window = Library.CreateLib("👉🐭👈TheRatGuy X Project Korusaki", "Ocean")
 local Credits = Window:NewTab("Credits")
@@ -80,6 +80,9 @@ GameSection:NewButton("RTX AUTUMN", "RTX", function()
 end)
 GameSection:NewButton("RTX BLOSSOM", "RTX", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Simple%20RTX'))()
+end)
+GameSection:NewButton("RTX BLOSSOM", "RTX", function()
+      loadstring(game:HttpGet('https://pastebin.com/raw/rHnGW2tt'))()
 end)
 GameSection:NewButton("Reduce Lag", "RTX", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Reduce%20Lag'))()
