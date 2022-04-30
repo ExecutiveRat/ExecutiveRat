@@ -93,3 +93,17 @@ end)
 GameSection:NewButton("Reduce Lag", "RTX", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Reduce%20Lag'))()
 end)
+GameSection:NewButton("Gems", "RTX", function()
+   while true do
+
+   local args = {
+       [1] = "DiamondCoin",
+       [2] = "id936323",
+       [3] = game:GetService("Players").LocalPlayer
+   }
+
+game:GetService("ReplicatedStorage").Framework.Network.DestoryCoinServer:FireServer(unpack(args))
+
+wait()
+end
+end)
