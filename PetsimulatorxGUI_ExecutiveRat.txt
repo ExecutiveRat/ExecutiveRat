@@ -20,9 +20,6 @@ end)
 CreditsSection:NewButton("Anti Ban", "Ban", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Anti%20bab'))()
 end)
-CreditsSection:NewButton("GodMode", "No Damage taken", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/4rqXL7jh'))()
-end)
 
 local Main = Window:NewTab("Troll")
 local MainSection = Main:NewSection("Fe Troll")
@@ -116,4 +113,21 @@ local PlayerSection = Player:NewSection("Player GUI")
 PlayerSection:NewButton("Speed GUI", "Speed GUI", function()
    loadstring(game:HttpGet('https://pastebin.com/raw/cruUwxaW'))()
 end)
-
+PlayerSection:NewButton("GodMode", "No Damage taken", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/4rqXL7jh'))()
+end)
+PlayerSection:NewToggle("Inf Jump", "Inf Jump", function(state)
+  if state then
+   local InfiniteJumpEnabled = true
+   game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+     game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end
+end)
+  else 
+   local InfiniteJumpEnabled = flase
+   game:GetService("UserInputService").JumpRequest:connect(function()
+      if InfiniteJumpEnabled then
+   game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end
+end)
