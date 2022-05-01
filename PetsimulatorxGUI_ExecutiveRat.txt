@@ -119,3 +119,10 @@ end)
 PlayerSection:NewButton("Gamepass", "Free Game pass working on some games", function()
    loadstring(game:HttpGet('https://pastebin.com/raw/cDfuXLES'))()
 end)
+PlayerSection:NewButton("Hoverboard", "Get All Hoverboard", function()
+   local tbl = require(game.ReplicatedStorage.Framework.Modules.Client["4 | Save"]).Get()
+   tbl.Hoverboards = {}
+   for i,v in pairs(game.ReplicatedStorage.Game.Hoverboards:GetChildren())do
+   table.insert(tbl.Hoverboards, v.Name)
+end
+end)
