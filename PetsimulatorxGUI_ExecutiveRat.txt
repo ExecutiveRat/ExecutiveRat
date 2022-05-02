@@ -73,10 +73,10 @@ MasterySection:NewToggle("Auto Collect LootBags", "LootBag", function(state)
 end
 end)
 MasterySection:NewButton("Auto Farm all types", "Farm", function()
-   loadstring(game:HttpGet(''))()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Farming'))()
 end)
 
-local Game = Window:NewTab("Game")
+local Game = Window:NewTab("Shader")
 local GameSection = Game:NewSection("InGame")
 GameSection:NewButton("RTX SUMMER", "RTX", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/RTX%20summer'))()
@@ -92,20 +92,6 @@ GameSection:NewButton("RTX Trixxie", "RTX", function()
 end)
 GameSection:NewButton("Reduce Lag", "RTX", function()
    loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Reduce%20Lag'))()
-end)
-GameSection:NewButton("Gems", "Test", function()
-   while true do
-
-   local args = {
-       [1] = "DiamondCoin",
-       [2] = "id936323",
-       [3] = game:GetService("Players").LocalPlayer
-   }
-
-game:GetService("ReplicatedStorage").Framework.Network.DestoryCoinServer:FireServer(unpack(args))
-
-wait(3)
-end
 end)
 
 local Player = Window:NewTab("Player")
