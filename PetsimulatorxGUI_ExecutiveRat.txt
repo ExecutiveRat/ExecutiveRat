@@ -4,7 +4,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
 Duration = 5;
 
-wait (3)
+wait (1)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Kavo.txt"))()
 local Window = Library.CreateLib("👉🐭👈TheRatGuy X Project Korusaki", "Ocean")
 local Credits = Window:NewTab("Credits")
