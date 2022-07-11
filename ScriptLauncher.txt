@@ -1,0 +1,226 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "LOADING";
+	Text = "VERSION : RATv69.696969";
+	Icon = "rbxthumb://type=Asset&id=1683451805&w=150&h=150"})
+Duration = 5;
+
+wait (1)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Kavo.txt"))()
+local Window = Library.CreateLib("🐭 ExecutiveRat", "BloodTheme")
+local Credits = Window:NewTab("Main")
+local CreditsSection = Credits:NewSection("Main")
+CreditsSection:NewButton("Credit", "Credits", function()
+   lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
+   lib.Message.New("Owner/Editor - ExecutiveRat Reference - kurasaki")
+   lib.Message.New("Thanks for using 😄")
+end)
+CreditsSection:NewButton("Discord", "Discord", function()
+
+end)
+CreditsSection:ToggleButton("Anti Ban", "Anti Ban(not always working)", function(state)
+   if state then
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Anti%20bab'))()
+   else
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Anti%20bab'))()
+ end
+end)
+CreditsSection:NewButton("Anti Bank log", "Fake dupe script", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Anti%20Bank%20log'))()
+end)
+
+local Main = Window:NewTab("A One Piece Game Scripts")
+local MainSection = Main:NewSection("Scripts (CTTO)")
+MainSection:NewButton("Astro", "Astro", function()
+    repeat wait() until game:IsLoaded()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/AstroScripter/ASTRO-HUB/main/Games/FreeGames/AstroLoader.lua')()
+end)
+MainSection:NewButton("UrbanStorms", "UrbanStorm - Cool Things", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Urbanstorms/Cool-things/main/A%200ne%20Piece%20Game.lua'),true))()
+
+local Arsenal = Window:NewTab("Arsenal")
+local ArsenalSection = Arsenal:NewSection("Arsenal Scripts")
+ArsenalSection:Button("Arsenal Script1", "Arsenal Script1", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/6FJuKK0j", true))()
+end)
+ArsenalSection:NewToggle("OP V1", "OP V2 - XMiles_Gaming", function()
+   game.StarterGui:SetCore("SendNotification", {
+    Title = "Arsenal OP Script V1";
+    Text = "Made by xMiles_Games"; -- what the text says (ofc)
+    Duration = 60;
+})
+wait(1)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Executed!";
+    Text = "Subscribe To xMiles_Games!"; -- what the text says (ofc)
+    Duration = 60;
+})
+local replicationstorage = game.ReplicatedStorage
+
+for i, v in pairs(replicationstorage.Weapons:GetDescendants()) do
+   if v.Name == "Auto" then
+       v.Value = true
+   end
+   if v.Name == "RecoilControl" then
+       v.Value = 0
+   end
+   if v.Name == "MaxSpread" then
+       v.Value = 0
+   end
+   if v.Name == "ReloadTime" then
+      v.Value = 0.1
+   end
+   if v.Name == "FireRate" then
+       v.Value = 0.05
+   end
+   if v.Name == "Crit" then
+       v.Value = 20
+   end
+end
+
+--Subscribe To xMiles_Games
+
+function getplrsname() for i,v in pairs(game:GetChildren()) do if v.ClassName == "Players" then return v.Name end end end local players = getplrsname() local plr = game[players].LocalPlayer coroutine.resume(coroutine.create(function() while wait(1) do coroutine.resume(coroutine.create(function() for _,v in pairs(game[players]:GetPlayers()) do if v.Name ~= plr.Name and v.Character then v.Character.RightUpperLeg.CanCollide = false v.Character.RightUpperLeg.Transparency = 75 v.Character.RightUpperLeg.Size = Vector3.new(21,21,21) v.Character.LeftUpperLeg.CanCollide = false v.Character.LeftUpperLeg.Transparency = 75 v.Character.LeftUpperLeg.Size = Vector3.new(21,21,21) v.Character.HeadHB.CanCollide = false v.Character.HeadHB.Transparency = 75 v.Character.HeadHB.Size = Vector3.new(21,21,21) v.Character.HumanoidRootPart.CanCollide = false v.Character.HumanoidRootPart.Transparency = 75 v.Character.HumanoidRootPart.Size = Vector3.new(21,21,21) end end end)) end end))
+
+--Made by Andrheyplayz_officalyt
+local gui = Instance.new("BillboardGui");
+gui.Name = "";
+gui.AlwaysOnTop = true;
+gui.LightInfluence = 0;
+gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+local frame = Instance.new("Frame", gui);
+frame.BackgroundColor3 = Color3.fromRGB(170, 0, 0);
+frame.Size = UDim2.new(1, 0, 1, 0);
+frame.BorderSizePixel = 4;
+frame.BorderColor3 = Color3.fromRGB(0, 0, 0);
+local gi = gui:Clone();
+local body = frame:Clone();
+body.Parent = gi;
+body.BackgroundColor3 = Color3.fromRGB(0, 170, 170);
+
+for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+    if v.Name ~= game:GetService("Players").LocalPlayer.Name and v.Character and v.Character:FindFirstChild("Head") then
+        gui:Clone().Parent = v.Character.Head;
+    end
+end
+
+local c = 1 function zigzag(X)  return math.acos(math.cos(X * math.pi)) / math.pi end game:GetService("RunService").RenderStepped:Connect(function()  if game.Workspace.Camera:FindFirstChild('Arms') then   for i,v in pairs(game.Workspace.Camera.Arms:GetDescendants()) do    if v.ClassName == 'MeshPart' then      v.Color = Color3.fromHSV(zigzag(c),1,1)     c = c + .0001    end   end  end end)
+net = true -- if false = do nothing
+notify = true -- set this to false if u don't want to see notiflication
+end)
+ArsenalSection:NewButton("Script3", "The3Bakers - Spicy Bagel", function()
+   _G.FasterLoading=false loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers/Spicy-Bagel/main/SpicyBagelHub.lua"))()
+end)
+
+local AFS = Window:NewTab("Anime Fighting Simulator")
+local AFSSection = AFS:NewSection("Anime Fighting Simulator Scripts")
+AFSSection:NewButton("TheMasterX", "The Master X", function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/AnimeFightingSim'),true))()
+end)
+AFSSection:NewButton("ShidoBad", "ShidoBad", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Shisobad/new/main/script.lua"))()
+end)
+
+local BH = Window:NewTab("Brook Haven")
+local BHSection = BH:NewSection("Brookhaven Script")
+BHSection:NewButton("Easter Egg", "Egg Finder - Easter", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/8ybpq3nC",true))()
+end)
+BHSection:NewButton("IceHub", "Ice Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+BHSection:NewButton("IDK", "Script 3 - CTTO", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Idk%20the%20hub'))()
+end)
+BHSection:NewButton("IDK2", "Script 4 -CTTO", function()
+   loadstring(game:HttpGet("https://gist.githubusercontent.com/testttbqwebg/adc0db730f5dfca0d8dbdb81f3b65391/raw/b0443888c4399af5a297cb1100a4749c65705711/qweqw", true))()
+end)
+
+local BF = Window:NewTab("BloxFruit")
+local BFSection = BF:NewSection("BloxFruit Scripts")
+BFSection:NewButton("Saza Hub", "Saza Hub", function()
+   _G.Color = Color3.fromRGB(255, 255, 255)
+loadstring(game:HttpGet"https://rawscripts.net/raw/SAZA-HUB_496")()
+end)
+BFSection:NewButton("BlackTrap", "BlackTrap", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/1jzfPqpi"))()
+end)
+BFSection:NewButton("BlackTrap2", "BlackTrap - Beta (Key: KEY_TEST) idk if still working", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/jmRUdL17"))()
+BFSection:NewButton("HHH", "Hoho Hub", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+BFSection:NewButton("EvilHub", "Evil Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EvilHub-Destroy/Free/main/AntiBring"))()
+end)
+BFSection:NewButton("OPBF", "OPBF - CTTO", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/20xaefad'))()
+end)
+BFSection:NewButton("Aerosoft", "Aerosoft", function()
+   loadstring(game:HttpGet("https://aerosoftworks.tk/script.lua"))()
+end)
+BFSection:NewButton("SXH", "Some X Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/somex_Gui.txt"))()
+end)
+BFSection:NewButton("SXH2", "Some X Hub - Beta", function()
+   _G.Color = Color3.fromRGB(255,255,255) 
+loadstring(game:HttpGet"https://raw.githubusercontent.com/kickTh/SCRIPT-SOME-X-HUB/main/README.md")()
+end)
+BFSection:NewButton("BoaHacker", "Boa Hacker", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/BoaHacker/ROBLOX/main/cheat', true))()
+end)
+BFSection:NewButton("PG", "Project Ghoul", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Kokuen0245/robloxscripts/main/Project%20ghoul%20autospin", true))()
+end)
+BFSection:NewButton("Ren", "Ren Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Gohan9k/renhub/main/GOHANSSJ3"))()
+end)
+BFSection:NewButton("Fussion", "Fussion Hub", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/SHAREHACK/script/main/fusion1'))()
+end)
+BFSection:NewButton("SeaHub", "Sea Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Sypse/Public-Cracks/main/SeaHubCrack.lua"))()
+end)
+BFSection:NewButton("LunarHub", "Lunar Hub", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Cve-Hub/LnHub/main/README.md'))()
+end)
+BFSection:NewButton("Netna", "Netma Yay", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/NinoGod/NetnaYay/8d21ce23346c500c93bb8b4a71f7791e4058a70b/startload.lua'))()
+end)
+BFSection:NewButton("Mokuro", "Mokuro Hub", function()
+   loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+end)
+BFSection:NewButton("MarkXHub", "Mark X Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ArceusXHub/AV2022/main/README.md", true))()
+end)
+BFSection:NewButton("Art", "Art Hub", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/ATR",true))()
+end)
+
+local Game = Window:NewTab("Shader")
+local GameSection = Game:NewSection("InGame")
+GameSection:NewButton("RTX SUMMER", "RTX", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/RTX%20summer'))()
+end)
+GameSection:NewButton("RTX AUTUMN", "RTX", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/RtX%20Autumn'))()
+end)
+GameSection:NewButton("RTX BLOSSOM", "RTX", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Simple%20RTX'))()
+end)
+GameSection:NewButton("RTX Trixxie", "RTX", function()
+      loadstring(game:HttpGet('https://pastebin.com/raw/rHnGW2tt'))()
+end)
+GameSection:NewButton("Reduce Lag", "RTX", function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/ExecutiveRat/2nd-Try/main/Reduce%20Lag'))()
+end)
+
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player GUI")
+PlayerSection:NewButton("Speed GUI", "Speed GUI", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/cruUwxaW'))()
+end)
+PlayerSection:NewButton("GodMode", "No Damage taken", function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/4rqXL7jh'))()
+   end
+  end
+end)
